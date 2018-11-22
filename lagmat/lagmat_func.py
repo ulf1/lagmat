@@ -26,6 +26,12 @@ def lagmat(A, lags=[], order='F'):
 
     """
     if lags:
+        # detect negative lags
+        if min(lags) < 0:
+            raise Exception((
+                "Negative lags are not allowed. Only provided integers "
+                "greater equal 0 as list/tuple elements"))
+
         # correct dimensions
         if len(A.shape) is 1:
             A = A.reshape(-1, 1)
