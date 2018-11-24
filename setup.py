@@ -7,7 +7,7 @@ def read(fname):
 
 
 setup(name='lagmat',
-      version='0.1.0',
+      version='0.2.0',
       description=(
           "Lagmatrix. Create array with time-lagged copies of the features"),
       long_description=read('README.md'),
@@ -20,6 +20,7 @@ setup(name='lagmat',
       install_requires=[
           'setuptools>=40.0.0',
           'nose>=1.3.7',
-          'numpy>=1.14.5'],
+          'numpy>=1.14.5',
+          'scikit-learn>=0.20.0'],
       python_requires='>=3.6',
       zip_safe=False)
