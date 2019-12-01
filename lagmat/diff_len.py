@@ -2,7 +2,7 @@ from .lagmat_func import lagmat
 import numpy as np
 
 
-def diff_len(x, lengths=None):
+def diff_len(x: np.array, lengths: list = None) -> np.array:
     """Differences for different Subperiod Lengths
 
     Parameters:

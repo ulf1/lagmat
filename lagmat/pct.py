@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 
 
-def val_to_pct(val):
+def val_to_pct(val: np.array) -> np.array:
     """Convert values (e.g. prices) to percentage changes, discrete returns
 
     Parameters:
@@ -32,7 +32,7 @@ def val_to_pct(val):
     return val / lagmat(val, lags=[1]) - 1.0
 
 
-def pct_to_val(ret, initial=1):
+def pct_to_val(ret: np.array, initial: float = 1.0) -> np.array:
     """Convert percentage changes, discrete returns into values or prices
 
     Returns:
@@ -55,27 +55,28 @@ def pct_to_val(ret, initial=1):
 
 
 class Pct(BaseEstimator, TransformerMixin):
-    def __init__(self, initial=None, trimnan=True):
+    def __init__(self, initial: float = None, trimnan: bool = True):
         self.initial = initial
         self.trimnan = trimnan
 
-    def fit(self, X, y=None):
+    def fit(self, X: np.array, y=None):
         # store the starting values
         if self.initial is None:
-            if len(X.shape) is 1:
+            if len(X.shape) == 1:
                 self.initial = X[0]
             else:
                 self.initial = X[0, :]
         # done
         return self
 
-    def transform(self, X, copy=None):
+    def transform(self, X: np.array, copy=None) -> np.array:
         if self.trimnan:
             return chopnan(val_to_pct(X), nchop=1)
         else:
             return val_to_pct(X)
 
-    def inverse_transform(self, Z, initial=None, copy=None):
+    def inverse_transform(self, Z: np.array, initial: float = None,
+                          copy=None) -> np.array:
         # Use the requested initial value, or use the fitted initial values
         if initial is None:
             initial = self.initial

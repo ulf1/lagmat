@@ -3,7 +3,7 @@ import numpy as np
 import warnings
 
 
-def diff_dth(x, order=1):
+def diff_dth(x: np.array, order: int = 1) -> np.array:
     """Differences of order d
 
     Parameters:
@@ -28,7 +28,7 @@ def diff_dth(x, order=1):
     return y
 
 
-def diff_1st(x):
+def diff_1st(x: np.array) -> np.array:
     """Difference x_t - x_{t-1} or Order of Integration I(1)
 
     Parameters:

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def lagmat(A, lags=[], order='F'):
+def lagmat(A: np.array, lags: list = [], order: str = 'F') -> np.array:
     """Create array with time-lagged copies of the features/variables
 
     Parameters
@@ -33,7 +33,7 @@ def lagmat(A, lags=[], order='F'):
                 "greater equal 0 as list/tuple elements"))
 
         # correct dimensions
-        if len(A.shape) is 1:
+        if len(A.shape) == 1:
             A = A.reshape(-1, 1)
 
         # number of colums and lags

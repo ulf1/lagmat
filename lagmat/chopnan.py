@@ -3,7 +3,7 @@ import numpy as np
 import warnings
 
 
-def chopnan(X, lags=[], nchop=None):
+def chopnan(X: np.array, lags: list = [], nchop: int = None) -> np.array:
     if lags:
         nchop = max(lags)
     if nchop is None:
@@ -11,7 +11,7 @@ def chopnan(X, lags=[], nchop=None):
     return X[nchop:, :]
 
 
-def rmnanrow(X):
+def rmnanrow(X: np.array) -> np.array:
     """Remove all rows that contain a NaN value"""
     warnings.warn((
         "This function 'rmnanrow' is for demonstration purpose only. "
