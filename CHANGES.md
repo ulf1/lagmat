@@ -1,3 +1,7 @@
+# 0.2.1 / 2019-12-01
+
+  * type hints added
+  * line profiler dependency removed
 
 # 0.2.0 / 2018-11-23
 
