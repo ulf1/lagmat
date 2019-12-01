@@ -1,3 +1,7 @@
+# 0.2.2 / 2019-12-01
+
+  * deprecation warning for continous returns, percentage, RoC and absolute differences
+
 # 0.2.1 / 2019-12-01
 
   * type hints added

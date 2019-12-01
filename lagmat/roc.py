@@ -3,6 +3,13 @@ from .lagmat_func import lagmat
 from .chopnan import chopnan
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
+import warnings
+
+
+warnings.warn(
+    ("'val_to_roc', 'roc_to_val', 'RoC' are deprecated and"
+     "will be moved to 'rateofchange' and 'rateofchange-sklearn' packages."),
+     DeprecationWarning, stacklevel=2)
 
 
 def val_to_roc(val: np.array) -> np.array:

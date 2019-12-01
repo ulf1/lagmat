@@ -3,6 +3,13 @@ from .lagmat_func import lagmat
 from .chopnan import chopnan
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
+import warnings
+
+
+warnings.warn(
+    ("'val_to_cont', 'cont_to_val', 'Cont' are deprecated and"
+     "will be moved to 'contreturn' and 'contreturn-sklearn' packages."),
+     DeprecationWarning, stacklevel=2)
 
 
 def val_to_cont(val: np.array) -> np.array:

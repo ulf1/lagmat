@@ -3,6 +3,13 @@ from .lagmat_func import lagmat
 from .chopnan import chopnan
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
+import warnings
+
+
+warnings.warn(
+    ("'val_to_pct', 'pct_to_val', 'Pct' are deprecated and"
+     "will be moved to 'pctreturn' and 'pctreturn-sklearn' packages."),
+     DeprecationWarning, stacklevel=2)
 
 
 def val_to_pct(val: np.array) -> np.array:
