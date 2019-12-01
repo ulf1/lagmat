@@ -9,7 +9,7 @@ import warnings
 warnings.warn(
     ("'val_to_roc', 'roc_to_val', 'RoC' are deprecated and"
      "will be moved to 'rateofchange' and 'rateofchange-sklearn' packages."),
-     DeprecationWarning, stacklevel=2)
+    DeprecationWarning, stacklevel=2)
 
 
 def val_to_roc(val: np.array) -> np.array:

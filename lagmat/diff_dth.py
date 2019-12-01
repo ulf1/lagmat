@@ -6,7 +6,7 @@ import warnings
 warnings.warn(
     ("'diff_dth', 'diff_1st' are deprecated and"
      "will be moved to 'absdiff' and 'absdiff-sklearn' packages."),
-     DeprecationWarning, stacklevel=2)
+    DeprecationWarning, stacklevel=2)
 
 
 def diff_dth(x: np.array, order: int = 1) -> np.array:
