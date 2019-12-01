@@ -23,7 +23,17 @@ pip install lagmat
 
 
 ## Usage
-Check the [examples](examples) folder for notebooks.
+
+```
+import numpy as np
+A = (np.random.rand(7,3) * 10 + 10).round(1)
+
+from lagmat import lagmat
+B = lagmat(A, lags=[0,1,2])  # 0: copy itself, 1: one time-lag, 2: two time-lags
+```
+
+
+Check the [examples](http://github.com/kmedian/lagmat/examples) folder for notebooks.
 
 
 ## Commands
@@ -56,7 +66,7 @@ rm -r .venv
 ```
 
 ## Debugging
-* Notebooks to profile python code are in the [profile](profile) folder
+* Notebooks to profile python code are in the [profile](http://github.com/kmedian/lagmat/profile) folder
 
 
 ## Support
