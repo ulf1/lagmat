@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/kmedian/lagmat.svg?branch=master)](https://travis-ci.org/kmedian/lagmat)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kmedian/lagmat/master?urlpath=lab)
+[![Gitpod - Code Now](https://img.shields.io/badge/Gitpod-code%20now-blue.svg?longCache=true)](https://gitpod.io#https://github.com/kmedian/lagmat)
 
 # lagmat
 Lagmatrix. Create array with time-lagged copies of the features
