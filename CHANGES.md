@@ -1,3 +1,10 @@
+# 0.3.0 / 2020-03-31
+
+  * sklearn deps removed. Wrapper moved to sklearn-pipelinetweak
+  * travis CI replaced by Github Actions
+  * unittest replaced by pytest
+  * speeded up code with numba
+
 # 0.2.2 / 2019-12-01
 
   * deprecation warning for continous returns, percentage, RoC and absolute differences

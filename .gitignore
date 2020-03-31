@@ -106,4 +106,4 @@ venv.bak/
 
 # other
 .vscode
-profile/data*
+examples/data*

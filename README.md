@@ -40,11 +40,10 @@ Check the [examples](http://github.com/kmedian/lagmat/examples) folder for noteb
 Install a virtual environment
 
 ```
-python3 -m venv .venv  # see note below
+python3.6 -m venv .venv
 source .venv/bin/activate
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
-pip3 install jupyterlab  # and other packages required for demo
 ```
 
 (If your git repo is stored in a folder with whitespaces, then don't use the subfolder `.venv`. Use an absolute path without whitespaces.)
@@ -64,9 +63,6 @@ find . -type d -name "__pycache__" | xargs rm -r
 rm -r .pytest_cache
 rm -r .venv
 ```
-
-## Debugging
-* Notebooks to profile python code are in the [profile](http://github.com/kmedian/lagmat/profile) folder
 
 
 ## Support
