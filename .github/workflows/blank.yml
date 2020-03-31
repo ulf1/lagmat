@@ -20,6 +20,6 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 --ignore=F401
-    - name: Unit Test with unittest
+    - name: Unit Test with pytest
       run: |
-        python -W ignore -m unittest discover
+        pytest
