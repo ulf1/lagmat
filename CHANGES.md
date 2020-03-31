@@ -4,6 +4,7 @@
   * travis CI replaced by Github Actions
   * unittest replaced by pytest
   * speeded up code with numba
+  * move repo to ulf1/lagmat
 
 # 0.2.2 / 2019-12-01
 

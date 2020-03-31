@@ -1,21 +1,11 @@
-[![Build Status](https://travis-ci.org/kmedian/lagmat.svg?branch=master)](https://travis-ci.org/kmedian/lagmat)
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kmedian/lagmat/master?urlpath=lab)
-[![Gitpod - Code Now](https://img.shields.io/badge/Gitpod-code%20now-blue.svg?longCache=true)](https://gitpod.io#https://github.com/kmedian/lagmat)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ulf1/lagmat/master?urlpath=lab)
 
 # lagmat
-Lagmatrix. Create array with time-lagged copies of the features
-
-
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Commands](#commands)
-* [Support](#support)
-* [Contributing](#contributing)
+Lagmatrix. Create array with time-lagged copies of the features.
 
 
 ## Installation
-The `lagmat` [git repo](http://github.com/kmedian/lagmat) is available as [PyPi package](https://pypi.org/project/lagmat)
+The `lagmat` [git repo](http://github.com/ulf1/lagmat) is available as [PyPi package](https://pypi.org/project/lagmat)
 
 ```
 pip install lagmat
@@ -33,7 +23,7 @@ B = lagmat(A, lags=[0,1,2])  # 0: copy itself, 1: one time-lag, 2: two time-lags
 ```
 
 
-Check the [examples](http://github.com/kmedian/lagmat/examples) folder for notebooks.
+Check the [examples](http://github.com/ulf1/lagmat/examples) folder for notebooks.
 
 
 ## Commands
@@ -66,8 +56,8 @@ rm -r .venv
 
 
 ## Support
-Please [open an issue](https://github.com/kmedian/lagmat/issues/new) for support.
+Please [open an issue](https://github.com/ulf1/lagmat/issues/new) for support.
 
 
 ## Contributing
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/kmedian/lagmat/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/ulf1/lagmat/compare/).
