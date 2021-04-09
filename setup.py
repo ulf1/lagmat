@@ -24,6 +24,6 @@ setup(name='lagmat',
       packages=['lagmat'],
       install_requires=[
           'setuptools>=40.0.0',
-          'numpy>=1.14.*'],
+          'numpy>=1.14.*,<2'],
       python_requires='>=3.6',
       zip_safe=True)
