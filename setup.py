@@ -20,10 +20,9 @@ setup(name='lagmat',
       url='http://github.com/ulf1/lagmat',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
-      license='MIT',
+      license='Apache License 2.0',
       packages=['lagmat'],
       install_requires=[
-          'setuptools>=40.0.0',
           'numpy>=1.14.*,<2'],
       python_requires='>=3.6',
-      zip_safe=True)
+      zip_safe=False)
