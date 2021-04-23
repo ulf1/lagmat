@@ -1,4 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/lagmat.svg)](https://badge.fury.io/py/lagmat)
+[![lagmat](https://snyk.io/advisor/python/lagmat/badge.svg)](https://snyk.io/advisor/python/lagmat)
+
 
 # lagmat
 Lagmatrix. Create array with time-lagged copies of the features.
