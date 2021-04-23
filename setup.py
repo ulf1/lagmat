@@ -1,5 +1,4 @@
 from setuptools import setup
-import pypandoc
 
 
 def get_version(path):
@@ -16,7 +15,7 @@ setup(name='lagmat',
       version=get_version("lagmat/__init__.py"),
       description=(
           "Lagmatrix. Create array with time-lagged copies of the features"),
-      long_description=pypandoc.convert('README.md', 'rst'),
+      long_description='README.rst',
       url='http://github.com/ulf1/lagmat',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
@@ -25,4 +24,4 @@ setup(name='lagmat',
       install_requires=[
           'numpy>=1.14.*,<2'],
       python_requires='>=3.6',
-      zip_safe=False)
+      zip_safe=True)
