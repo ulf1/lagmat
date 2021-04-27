@@ -107,3 +107,4 @@ venv.bak/
 # other
 .vscode
 examples/data*
+README.rst
