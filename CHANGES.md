@@ -1,3 +1,7 @@
+# 0.3.3 / 2021-12-24
+
+  * numpy version bumped up due to security problems
+
 # 0.3.2 / 2020-04-23
 
   * Test multiple python versions
