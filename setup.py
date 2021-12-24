@@ -29,6 +29,6 @@ setup(name='lagmat',
       license='Apache License 2.0',
       packages=['lagmat'],
       install_requires=[
-          'numpy>=1.14.*,<2'],
+          'numpy>=1.22.0,<2'],
       python_requires='>=3.6',
       zip_safe=True)
