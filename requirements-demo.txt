@@ -2,3 +2,4 @@ jupyterlab>=1.2.*
 matplotlib>=3.1.*
 numba>=0.48.*
 memory_profiler>=0.54.*
+tornado>=6.3.3 # not directly required, pinned by Snyk to avoid a vulnerability
